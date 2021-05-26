@@ -64,7 +64,7 @@
             <!-----Social Security Number---------------------------------------------------------->
             <tr>
               <td>Social Security Number</td>
-              <td><input type="text" name="Social Security Number" maxlength="30"/>
+              <td><input type="text" name="Social_Security_Number" maxlength="30"/>
               </td>
               </tr> 
             <!----- Submit ------------------------------------------------->
@@ -98,26 +98,38 @@
        </table>
  </form>
     </div>
+    <!-- validation -->
 <?php
-// echo "hdshsdh/n";
 
-$fullname =$_POST["Fullname"];
-// echo $fullname;
-
-// $user=array($_POST["Fullname"],$_POST["User_Name"],
-//             $_POST["Password"],$_POST["Confirm"],$_POST["Email"],
-//             $_POST["Mobile"],$_POST["Date_Of_Birth"]);
-// echo $user[1];
-// foreach($user as $value){
-//     print $value;
-//     print "";
+// if($_SERVER["REQUEST_METHOD"] == "POST") {
+//   if(empty($_POST["Fullname"])) {
+//     exit("Can't Be Empty!");
+//   } elseif(empty($_POST["User_Name"])){
+//     exit("Can't Be Empty!");
+//   } elseif(empty($_POST["Password"])){
+//     exit("Can't Be Empty!");
+//   }
+//   elseif(empty($_POST["Confirm"])){
+//     exit("Can't Be Empty!");
+//   }elseif($_POST["Confirm"]==$_POST["Password"]){
+//     exit("Password does not match!");
+//   }
+//   elseif(empty($_POST["Email"])){
+//     exit("Can't Be Empty!");
+//   } elseif(empty($_POST["Mobile"])){
+//     exit("Can't Be Empty!");
+//   } elseif(empty($_POST["Date_Of_Birth"])){
+//     exit( "Can't Be Empty!");
+//   } elseif(empty($_POST["Social_Security_Number"])){
+//     exit("Can't Be Empty!");
+//   }
 // }
-// $All_users=array();
-// array_push($All_users ,$user);
-//  foreach($All_users as $value){
-//          print $value;
-//     }
 ?>
+
+
+
+
+
 </body>
 </html>
 
